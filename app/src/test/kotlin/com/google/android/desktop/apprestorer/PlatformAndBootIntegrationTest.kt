@@ -216,7 +216,16 @@ class PlatformAndBootIntegrationTest {
     assertFalse(BootCountdownOverlay.isShowing)
     assertFalse(runtime.promptVisible)
 
-    // Notifications post & cancel cleanly.
+    // Persistent monitor notification uses the expected background status copy and ongoing flag.
+    Notifications.ensureChannels(context)
+    val monitorNotif = Notifications.monitorNotification(context)
+    assertEquals(
+      "Googlebook App Restorer is working in the background",
+      monitorNotif.extras.getCharSequence(android.app.Notification.EXTRA_TITLE)?.toString(),
+    )
+    assertTrue(monitorNotif.flags and android.app.Notification.FLAG_ONGOING_EVENT != 0)
+
+    // Companion restore notifications post & cancel cleanly.
     Notifications.postRestoreNotification(context, sampleSnapshot)
     val nm = context.getSystemService(NotificationManager::class.java)
     assertEquals(1, shadowOf(nm).allNotifications.count { it != null })

@@ -4,7 +4,7 @@
     <string name="accessibility_description">Captures each open desktop window\'s app, Virtual Desk, display, size, position, minimized state, Z-order and Chrome tabs so they can be restored after a reboot. It also recreates Virtual Desks in Overview when you choose Restore Windows. Data stays on this device.</string>
     <string name="channel_restore">Restore after reboot</string>
     <string name="channel_monitor">Workspace monitor</string>
-    <string name="monitor_title">Armed &amp; capturing before reboot</string>
+    <string name="monitor_title">Googlebook App Restorer is working in the background</string>
     <string name="monitor_text">Your windows, desks and Chrome tabs will be offered for restore after reboot.</string>
     <string name="restore_notification_title">Restore previous windows?</string>
     <string name="restore_notification_text">%1$d windows across %2$d desk(s) on %3$d display(s). Tap to review.</string>

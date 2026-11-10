@@ -13,8 +13,8 @@ android {
     applicationId = "com.google.android.desktop.apprestorer"
     minSdk = 33
     targetSdk = 36
-    versionCode = 119
-    versionName = "1.2.0"
+    versionCode = 120
+    versionName = "1.2.1"
     base.archivesName.set(appName)
   }
 
