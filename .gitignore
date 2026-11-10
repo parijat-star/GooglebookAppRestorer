@@ -1,0 +1,27 @@
+# Gradle & Kotlin build outputs
+.gradle/
+.kotlin/
+build/
+**/build/
+
+# Local SDK & environment configuration
+local.properties
+
+# Signing keystores & credentials (never commit secrets)
+*.jks
+*.keystore
+play-store-keys.json
+google-services.json
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS & temporary artifacts
+.DS_Store
+Thumbs.db
+*~
+*.swp

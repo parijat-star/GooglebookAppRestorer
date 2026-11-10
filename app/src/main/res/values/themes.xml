@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GooglebookAppRestorer" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Compact centered floating popup: never full screen. -->
+    <style name="Theme.GooglebookAppRestorer.PopupDialog" parent="android:Theme.Material.Light.Dialog.NoActionBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowMinWidthMajor">560dp</item>
+        <item name="android:windowMinWidthMinor">480dp</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

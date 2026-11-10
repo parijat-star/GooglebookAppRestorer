@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- laptop screen -->
+    <path android:fillColor="#FFFFFF" android:pathData="M30,36h48a3,3 0,0 1,3 3v28h-54v-28a3,3 0,0 1,3 -3z" />
+    <path android:fillColor="#D2E3FC" android:pathData="M31,39h46v26h-46z" />
+    <!-- laptop base -->
+    <path android:fillColor="#FFFFFF" android:pathData="M24,68h60l-3,5h-54z" />
+    <!-- windows (desks) -->
+    <path android:fillColor="#34A853" android:pathData="M34,42h16v11h-16z" />
+    <path android:fillColor="#FBBC04" android:pathData="M42,47h18v12h-18z" />
+    <path android:fillColor="#EA4335" android:pathData="M56,43h17v14h-17z" />
+    <!-- restore arrow -->
+    <path android:fillColor="#00000000" android:strokeColor="#FFFFFF" android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M70,30a10,10 0,1 0,6 9" />
+    <path android:fillColor="#FFFFFF" android:pathData="M76,33l4,8l-9,-1z" />
+</vector>
