@@ -1,14 +1,38 @@
-# Googlebook App Restorer
+<p align="center">
+  <img src="docs/images/icon.svg" width="112" alt="Googlebook App Restorer icon: a Googlebook laptop with multi-desk windows and a restore arrow" />
+</p>
 
-![Platform](https://img.shields.io/badge/Platform-Android_Desktop_%2F_Googlebook-3DDC84?logo=android&logoColor=white)
-![API](https://img.shields.io/badge/API-33%2B_(Android_13--17)-blue)
-![Root%20%2F%20ADB](https://img.shields.io/badge/Root_%2F_ADB-Not_Required-success)
-![Privacy](https://img.shields.io/badge/Network-100%25_Offline_(Zero_Internet)-informational)
-![License](https://img.shields.io/badge/License-Apache_2.0-orange)
+<h1 align="center">Googlebook App Restorer</h1>
 
-**Googlebook App Restorer** automatically captures and restores your multi-desk, multi-display Android Desktop / Googlebook workspace across reboots — **without requiring root or ADB**.
+<p align="center">
+  <b>Automatic multi-desk, multi-display workspace &amp; window restorer across reboots for Googlebooks.</b><br>
+  Preserves open apps, exact freeform window sizes &amp; positions, snapped/maximized/minimized states, Virtual Desks (<code>Desk 1..N</code>), external monitors, Trusted Web Apps (TWAs), multi-instance windows (Chrome, Files), and open Chrome tabs — <b>without requiring root or ADB</b>.
+</p>
 
-Once set up, it works silently in the background (even when the app window is closed), tracking open apps, exact freeform window bounds, snapped/maximized/fullscreen/minimized states, Virtual Desks (`Desk 1..N`), external monitors, Trusted Web Apps (TWAs / WebAPKs), multi-instance windows (Chrome, Files), and open Chrome tab URLs. After a reboot and screen unlock, a compact floating countdown pop-up (`6s`) restores your workspace automatically unless you press **Cancel** (`Esc`).
+<p align="center">
+  <a href="../../releases/latest/download/GooglebookAppRestorer-release.apk"><b>⬇ Download GooglebookAppRestorer-release.apk</b></a>
+  &nbsp;·&nbsp; <a href="#highlights">Highlights</a>
+  &nbsp;·&nbsp; <a href="#quick-start--first-time-setup">Install</a>
+  &nbsp;·&nbsp; <a href="#why-each-permission-is-needed">Permissions &amp; Privacy</a>
+  &nbsp;·&nbsp; <a href="#architecture">Architecture</a>
+  &nbsp;·&nbsp; <a href="#building-testing--fuzzing">Build &amp; Test</a>
+  &nbsp;·&nbsp; <a href="#made-on-a-googlebook">Made on a Googlebook</a>
+  &nbsp;·&nbsp; <a href="#license">License</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Googlebook_OS-Android_13--17_(API_33%2B)-133F43" alt="Googlebook OS, Android 13-17 (API 33+)" />
+  <img src="https://img.shields.io/badge/developed_on-a_Googlebook-E0407E?style=flat" alt="Developed on a Googlebook" />
+  <img src="https://img.shields.io/badge/developed_for-Googlebooks-1F6F66" alt="Developed for Googlebooks" />
+  <img src="https://img.shields.io/badge/Root_%2F_ADB-Not_Required-2E7D32" alt="Zero Root or ADB Required" />
+  <img src="https://img.shields.io/badge/Network-100%25_Offline-0277BD" alt="100% Offline (Zero Internet)" />
+  <img src="https://img.shields.io/badge/license-Apache_2.0-555555" alt="Apache 2.0 license" />
+</p>
+
+<p align="center">
+  <sub>A personal passion project, proudly developed on and for a Googlebook in its Linux Terminal.<br>
+  Not affiliated with or endorsed by Google or any employer (<a href="#about-this-project">more</a>).</sub>
+</p>
 
 ---
 
@@ -34,7 +58,7 @@ Once set up, it works silently in the background (even when the app window is cl
 
 ## Quick Start & First-Time Setup
 
-1. **Install the APK**: Download and install `GooglebookAppRestorer-release.apk` (or build from source below).
+1. **Install the APK**: Download [`GooglebookAppRestorer-release.apk`](../../releases/latest/download/GooglebookAppRestorer-release.apk) (or build from source below).
 2. **Grant the 4 One-Time Permissions** in the onboarding screen:
    - *Note for sideloaded APKs on Android 13+*: Before enabling Accessibility, open **Settings → Apps → Googlebook App Restorer → ⋮ (top-right) → Allow restricted settings** once.
    - Tap each permission card in the app to jump directly to the matching Settings toggle.
@@ -124,11 +148,26 @@ Test suites under `app/src/test/`:
 
 ---
 
-## Contributing & Security
+## Made on a Googlebook
 
-- Contribution workflow and coding guidelines: [CONTRIBUTING.md](CONTRIBUTING.md)
-- On-device security & privacy architecture and vulnerability reporting: [SECURITY.md](SECURITY.md)
+Googlebook App Restorer was designed, built, and tested directly on a Googlebook:
+
+- **Developed in the Linux Terminal**: All Kotlin sources, Gradle builds, static analysis, and APK packaging were executed inside the Googlebook's built-in Linux VM.
+- **Tested headlessly & live across reboots**: Verified both via headless Robolectric + Compose UI harnesses (simulating 2560×1600 multi-desk / multi-display desktop geometries and `10,000+` fuzz iterations) and live across real Googlebook reboots.
+- **Pure JVM portability**: Zero native C/C++ (`.so`) dependencies, allowing a single universal APK (`2.0 MB` release) to run natively on both Intel `x86_64` and Qualcomm Snapdragon `arm64-v8a` Googlebooks.
+
+---
+
+<h2 id="about-this-project">About this project</h2>
+
+Googlebook App Restorer is an independent, open-source passion project developed on and for Googlebooks so desktop workspaces, Virtual Desks, window layouts, and open tabs pick up right where you left off after every reboot.
+
+It is not affiliated with, endorsed by, or sponsored by Google or any employer. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) for contribution and security details.
+
+---
 
 ## License
 
 Licensed under the [Apache License, Version 2.0](LICENSE).
+
+<p align="center"><sub>Crafted with passion on a Googlebook, for the Googlebook community.</sub></p>
